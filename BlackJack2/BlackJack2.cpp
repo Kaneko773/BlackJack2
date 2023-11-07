@@ -16,7 +16,7 @@ const int MARK = 4;
 const int NUMBER = 13;
 
 Card MakeRandomCard();
-void CardShow(Status other, int Index);//カード情報表示
+void CardShow(Status& other, int Index);//カード情報表示
 void GeneralInformationShow(Player& player, Dealer& dealer);//全体情報表示
 
 int main()
@@ -89,7 +89,7 @@ Card MakeRandomCard()
     return random;
 }
 
-void CardShow(Status other, int Index)
+void CardShow(Status& other, int Index)
 {
 
     switch (other.get_pcard(Index).get_mark()) {
