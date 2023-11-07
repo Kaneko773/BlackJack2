@@ -12,16 +12,16 @@ public:
     ~Status();
 
 public:
-    Card get_pcard(int Index) {
+    Card get_pcard(int Index) const {
         return _pcard[Index];
     }
-    int get_outwardlyNum() {
+    int get_outwardlyNum() const {
         return _outwardlyNum;
     }
     void set_outwardlyNum() {
         ++_outwardlyNum;
     }
-    int get_score() {
+    int get_score() const {
         return _score;
     }
     void set_score(Number point) {

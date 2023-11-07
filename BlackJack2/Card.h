@@ -10,10 +10,10 @@ public:
     void operator=(const Card& other);
 
 public:
-    Mark get_mark() {
+    Mark get_mark() const {
         return _mark;
     }
-    Number get_Number() {
+    Number get_Number() const {
         return _number;
     }
 
